@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fisioterapeuta Domiciliar - Seu Cuidado, na Sua Casa</title>
+    <!-- Carregamento do Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome (Ícones de Redes Sociais) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJzL31r+Q71m4JjV92Vw+6d21yJ44jN/96/m6X8gB7fE9XzWw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Configuração de fontes e cores customizadas -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc; 
+        }
+        /* Definição do verde profissional customizado */
+        :root {
+            --bs-primary-green: #059669; /* Verde Esmeralda */
+            --bs-hover-green: #047857;
+            --bs-light-green: #ecfdf5; /* Background claro */
+        }
+        .bg-custom-green {
+            background-color: var(--bs-primary-green) !important;
+        }
+        .text-custom-green {
+            color: var(--bs-primary-green) !important;
+        }
+        .btn-custom-primary {
+            background-color: var(--bs-primary-green);
+            border-color: var(--bs-primary-green);
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-custom-primary:hover {
+            background-color: var(--bs-hover-green);
+            border-color: var(--bs-hover-green);
+            transform: translateY(-1px);
+            color: white;
+        }
+        .bg-section-light {
+            background-color: var(--bs-light-green) !important;
+        }
+        .border-custom-green-top {
+            border-top: 4px solid var(--bs-primary-green) !important;
+        }
+    </style>
+</head>
+<body class="text-dark">
+
+    <!-- Navbar/Header Fixo (Acesso Rápido) -->
+    <header class="bg-white shadow sticky-top z-3">
+        <div class="container py-3 d-flex justify-content-between align-items-center">
+            <h1 class="fs-4 fw-bold text-custom-green mb-0">Fisio. Nome do Profissional</h1>
+            <div class="d-flex gap-2">
+                <!-- Botão Instagram -->
+                <a href="https://instagram.com/seuusuario" target="_blank" class="btn btn-sm btn-danger rounded-circle p-2 shadow" aria-label="Instagram do Profissional" style="background-color: #e83e8c; border-color: #e83e8c;">
+                    <!-- Ícone Font Awesome -->
+                    <i class="fa-brands fa-instagram fs-5"></i>
+                </a>
+                <!-- Botão WhatsApp (Principal CTA) -->
+                <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20domiciliar." target="_blank" class="btn btn-sm btn-custom-primary d-flex align-items-center fw-semibold shadow-sm">
+                    <!-- Ícone Font Awesome -->
+                    <i class="fa-brands fa-whatsapp fs-5 me-2"></i>
+                    Fale Agora
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. Seção HERO (Destaque Principal) -->
+    <section class="py-5 py-md-5 bg-section-light">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                
+                <!-- Texto de Captação -->
+                <div class="col-lg-6 text-center text-lg-start">
+                    <p class="fs-5 fw-semibold text-custom-green mb-2">FISIOTERAPIA DOMICILIAR PERSONALIZADA</p>
+                    <h2 class="display-5 fw-bold lh-sm mb-4 text-dark">
+                        Seu Alívio e Recuperação Começam <span class="text-custom-green">Onde Você Está.</span>
+                    </h2>
+                    <p class="lead text-secondary mb-4">
+                        Recupere sua mobilidade e qualidade de vida sem sair do conforto da sua casa. Tratamento focado, individualizado e sem estresse.
+                    </p>
+
+                    <!-- CTA Principal -->
+                    <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20domiciliar." target="_blank" class="btn btn-custom-primary btn-lg fw-bold px-4 py-3 rounded-3 shadow-lg hover-shadow-xl">
+                        <!-- Ícone Font Awesome -->
+                        <i class="fa-brands fa-whatsapp fs-5 me-2"></i>
+                        Quero Agendar Minha Avaliação
+                    </a>
+                </div>
+
+                <!-- Imagem do Profissional -->
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <!-- Imagem Placeholder do Fisioterapeuta - Substituir por foto real -->
+                    <img src="https://placehold.co/400x400/059669/ffffff?text=Foto+do+Fisioterapeuta" 
+                         alt="Foto profissional do fisioterapeuta atendendo a domicílio" 
+                         class="img-fluid rounded-circle shadow-lg border border-3 border-white transition duration-500" style="width: 300px; height: 300px; object-fit: cover;"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Seção QUEM EU SOU (Autoridade e Conexão) -->
+    <section id="quem-sou" class="py-5 py-md-5 bg-white">
+        <div class="container text-center">
+            <h3 class="fs-2 fw-bold text-dark mb-4">Seu Fisioterapeuta. Seu Aliado.</h3>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 fs-5 text-secondary">
+                    <p class="mb-3">Olá! Sou [Nome do Profissional], Fisioterapeuta formado(a) pela [Nome da Instituição] e especialista em [Área de Especialidade, ex: Reabilitação Ortopédica e Desportiva].</p>
+                    <p class="mb-3">Minha missão é trazer a clínica até você, eliminando o desgaste do deslocamento e garantindo um tratamento 100% focado no seu ambiente e nas suas necessidades diárias. Entendo que o conforto e a personalização são a chave para uma recuperação mais rápida e eficaz.</p>
+                    <p class="fw-semibold text-custom-green fs-4 mt-4">Comprometimento, equipamentos de ponta e humanização em cada sessão.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Seção SERVIÇOS (Foco em Solução) -->
+    <section id="servicos" class="py-5 py-md-5 bg-section-light">
+        <div class="container">
+            <h3 class="fs-2 fw-bold text-center text-dark mb-5">Principais Áreas de Atendimento Domiciliar</h3>
+            
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                
+                <!-- Cartão 1: Ortopedia e Traumatologia -->
+                <div class="col">
+                    <div class="card h-100 p-4 rounded-3 shadow-lg border-0 border-custom-green-top">
+                         <div class="card-body text-center text-md-start">
+                            <svg class="mb-3 text-custom-green" width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6m0 0a2 2 0 002 2h2a2 2 0 002-2m-7 0h14m-7 0V6a2 2 0 00-2-2H9a2 2 0 00-2 2v10m8 0v-6a2 2 0 00-2-2h-2a2 2 0 00-2 2v6m8 0a2 2 0 002 2h2a2 2 0 002-2m-7 0h14"></path></svg>
+                            <h4 class="fs-5 fw-semibold mb-2">Reabilitação Ortopédica</h4>
+                            <p class="text-secondary">Tratamento de lesões (fraturas, entorses, pós-cirúrgicos) e dores crônicas (lombalgia, cervicalgia) com foco na recuperação da função.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cartão 2: Geriatria -->
+                <div class="col">
+                    <div class="card h-100 p-4 rounded-3 shadow-lg border-0 border-custom-green-top">
+                        <div class="card-body text-center text-md-start">
+                            <svg class="mb-3 text-custom-green" width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                            <h4 class="fs-5 fw-semibold mb-2">Fisioterapia Geriátrica</h4>
+                            <p class="text-secondary">Foco em equilíbrio, prevenção de quedas, manutenção da autonomia e melhoria da qualidade de vida na terceira idade, no ambiente seguro do lar.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cartão 3: Dores Crônicas / Postura -->
+                <div class="col">
+                    <div class="card h-100 p-4 rounded-3 shadow-lg border-0 border-custom-green-top">
+                        <div class="card-body text-center text-md-start">
+                            <svg class="mb-3 text-custom-green" width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2v5h2a2 2 0 002-2v-7a2 2 0 00-2-2h-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2H7a2 2 0 00-2 2v7a2 2 0 002 2h2v-5c0-1.105 1.343-2 3-2z"></path></svg>
+                            <h4 class="fs-5 fw-semibold mb-2">Reeducação Postural</h4>
+                            <p class="text-secondary">Tratamento para má postura, dores relacionadas ao trabalho (ergonomia) e prevenção de problemas futuros, ajustado ao seu mobiliário.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Secundária -->
+            <div class="text-center mt-5">
+                <p class="fs-4 fw-medium text-dark mb-4">Não encontrou seu caso? Agende sua avaliação detalhada:</p>
+                <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20domiciliar." target="_blank" class="btn btn-custom-primary btn-lg fw-bold px-4 py-3 rounded-3 shadow-lg hover-shadow-xl">
+                    Falar com o Profissional
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Seção DEPOIMENTOS (Prova Social) -->
+    <section id="depoimentos" class="py-5 py-md-5 bg-white">
+        <div class="container">
+            <h3 class="fs-2 fw-bold text-center text-dark mb-5">Quem Confia no Atendimento Domiciliar</h3>
+            
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                
+                <!-- Depoimento 1 -->
+                <div class="col">
+                    <div class="p-4 rounded-3 shadow-sm border-start border-4 border-custom-green">
+                        <p class="fst-italic text-secondary mb-3">"A dor no joelho sumiu mais rápido do que imaginei! O conforto de não precisar me deslocar para a clínica fez toda a diferença na minha rotina."</p>
+                        <p class="fw-semibold text-custom-green mb-0">- João S., 55 anos (Reabilitação Pós-Cirúrgica)</p>
+                    </div>
+                </div>
+                
+                <!-- Depoimento 2 -->
+                <div class="col">
+                    <div class="p-4 rounded-3 shadow-sm border-start border-4 border-custom-green">
+                        <p class="fst-italic text-secondary mb-3">"Profissionalismo e atenção incomparáveis. O atendimento na minha casa me deu muito mais segurança para o tratamento de equilíbrio da minha mãe."</p>
+                        <p class="fw-semibold text-custom-green mb-0">- Ana C., 32 anos (Fisioterapia Geriátrica)</p>
+                    </div>
+                </div>
+                
+                <!-- Depoimento 3 -->
+                <div class="col d-none d-lg-block">
+                    <div class="p-4 rounded-3 shadow-sm border-start border-4 border-custom-green">
+                        <p class="fst-italic text-secondary mb-3">"Meus problemas de postura melhoraram muito com as orientações ergonômicas no meu próprio escritório. Recomendo demais o atendimento em casa!"</p>
+                        <p class="fw-semibold text-custom-green mb-0">- Ricardo P., 40 anos (Reeducação Postural)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Seção CONTATO/FOOTER (Fechamento e Redes Sociais) -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container text-center">
+            
+            <h3 class="fs-2 fw-bold mb-4" style="color: #4ade80;">Pronto para o Seu Próximo Passo?</h3>
+            <p class="lead mb-4 text-light">Cuide da sua saúde com a comodidade e a qualidade que você merece.</p>
+            
+            <!-- CTAs Finais -->
+            <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 mb-4">
+                <a href="https://wa.me/5599999999999?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20domiciliar." target="_blank" class="btn btn-custom-primary btn-lg fw-bold px-4 py-3 rounded-3 shadow-lg w-100 w-sm-auto">
+                    <!-- Ícone Font Awesome -->
+                    <i class="fa-brands fa-whatsapp fs-5 me-2"></i>
+                    Agende pelo WhatsApp
+                </a>
+
+                <a href="https://instagram.com/seuusuario" target="_blank" class="btn btn-outline-danger btn-lg fw-bold px-4 py-3 rounded-3 w-100 w-sm-auto" style="border-color: #e83e8c; color: #e83e8c;">
+                    <!-- Ícone Font Awesome -->
+                    <i class="fa-brands fa-instagram fs-5 me-2"></i>
+                    Ver no Instagram
+                </a>
+            </div>
+
+            <div class="border-top border-secondary pt-4 mt-4">
+                <p class="small text-secondary mb-0">
+                    &copy; 2025 [Nome do Profissional] - Fisioterapia Domiciliar. <br>
+                    CREFITO: [Seu Número de Registro]
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Script do Bootstrap (necessário para alguns componentes e funcionalidades) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Script para Rolagem Suave (mantido para navegação entre seções) -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
